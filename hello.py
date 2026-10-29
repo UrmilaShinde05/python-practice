@@ -153,6 +153,49 @@ print(type(False))'''
 message[0] = 'p'
 print(message)'''
 
+# String are immutable any modification done in string it creates a new string instead of alterning the original one
+
+s = "aBCDEF"
+s = "A" + s[1:]
+print(s)
+
+##String deletion
+
+'''s1 = "ABC"
+del s1'''
+
+#String updating 
+
+'''s2  = "  ABCDEF  "
+s3 = "H" + s2[1:]
+s4 = s2.replace("ABC" , "abc")
+print (s3)
+print(s4)'''
+
+# String upper and lower method
+
+'''print (s.upper())
+print(s.lower())'''
+
+# s2.strip() ## Remove leading spaces and trailing spaces from the sting
+
+'''a = " I am awesome"
+b = a.replace("awesome" , "funloving")
+print(b)
+# or 
+print (a.replace("awesome" , "funloving"))'''
+
+#Concatenating and Repeating Strings
+'''s1 = "Hello"
+s2 = "Supermom"
+print(s1 + " " + s2)
+print(s1 * 3)'''
+
+word = ["Python" , "is" , "Easy"]
+print("_".join(word))
+
+
+
 #________________________________________________________________________________________________________
 
 #Lists are mutable in Python. We can add or remove elements from the list. 
@@ -239,8 +282,28 @@ print(a <= b)'''
 
 #Logical Operators
 
-a = True
+'''a = True
 b = False
 print(a and b)
 print(a or b)
-print(not a)
+print(not a)'''
+
+#________________________________________________________________________________________________________
+
+'''print("1 :", -7 // 2)
+print("2 :", 2 ** 4)
+print("3 :", 2 ** 3 * 2)
+print("4 :", 7 // 2)
+print("5 :", 7 % 3)
+print("6 :", 2 ** 4)
+print("7 :", 10 / 4)
+print("8 :", 5 != 3)
+print("9 :", 4 >= 4)
+print("10 :", 3 < 2)
+print("11 :", True and False)
+print("12 :", True or False)
+print("13 :", not True)
+print("14 :", 5 > 2 and 3 > 1)
+print("15 :", 2 ** 3 * 2)
+print("16 :", 10 != 10.0)
+print("17 :", 10 == 10.0)'''
