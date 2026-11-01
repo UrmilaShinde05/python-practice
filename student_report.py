@@ -15,3 +15,22 @@ average = total / 3
 print(f"Student: {x}")
 print(f"Total: {total}")
 print(f"Average: {average}")
+
+# Grade the student based on the average mark using if, elif, and else statements. Print the grade.
+
+x = input ("enter your name:")
+
+if average >=80:
+    print("Grade: A")
+
+elif average >= 60 and average < 79:
+    print("Grade: B")
+
+elif average >=40 and average < 59:
+    print("Grade: C")
+
+elif average > 40:
+    print(" Grade: F")
+
+else:
+    print("Fail")
