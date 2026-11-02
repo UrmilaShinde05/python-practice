@@ -58,7 +58,7 @@ else:
 
 #example:
 
-n = 12
+'''n = 12
 if n > 5:
     print("A")
 if n > 10:
@@ -71,5 +71,34 @@ if n > 5:
 elif n > 10:
     print("B")
 else:
-    print("C")
+    print("C")'''
+
+'''#Requirements:
+1. Ask employee name.
+2. Ask basic salary.
+3. Calculate HRA = 20% of basic salary.
+4. Calculate DA = 10% of basic salary.
+5. Calculate total salary.
+6. If total salary is above ₹50,000, display "High Salary".
+7. Otherwise display "Regular Salary".'''
+
+employee_name = input("Enter Employee Name :")
+basic_salary = float(input("Enter Basic Salary :"))
+
+HRA = 0.2 * basic_salary
+DA = 0.1 * basic_salary
+total_salary = basic_salary + HRA + DA
+
+print(f"\n----- EMPLOYEE SALARY DETAILS -----")
+print(f"Employee Name : {employee_name}")
+print(f"Basic Salary : {basic_salary : .2f}")
+print(f"HRA : {HRA : .2f}")
+print(f"DA : {DA : .2f}")
+print(f"Total Salary : {total_salary : .2f}")
+
+if total_salary > 50000:
+    print("High Salary")
+
+else:
+    print("Regular Salary")
 
