@@ -21,6 +21,9 @@ for x in words:
 
 ## Create sample collections
 
+from typing import Set
+
+
 users = {'Hans' : 'Active', 'Morgan' : 'Inactive', 'Shyam' : 'Active'}
 
 #Strategy : Iterate over the copy
@@ -155,9 +158,9 @@ print(message)'''
 
 # String are immutable any modification done in string it creates a new string instead of alterning the original one
 
-s = "aBCDEF"
+'''s = "aBCDEF"
 s = "A" + s[1:]
-print(s)
+print(s)'''
 
 ##String deletion
 
@@ -191,8 +194,8 @@ s2 = "Supermom"
 print(s1 + " " + s2)
 print(s1 * 3)'''
 
-word = ["Python" , "is" , "Easy"]
-print("_".join(word))
+'''word = ["Python" , "is" , "Easy"]
+print("_".join(word))'''
 
 
 
@@ -307,3 +310,39 @@ print("14 :", 5 > 2 and 3 > 1)
 print("15 :", 2 ** 3 * 2)
 print("16 :", 10 != 10.0)
 print("17 :", 10 == 10.0)'''
+
+#____________________________________________________________________________________________________________
+
+#You are given a list of numbers. Your task is to identify which numbers are divisible by both 3 and 5.
+
+'''numbers = [12, 15, 20, 30, 44, 45, 60, 71]
+
+for num in numbers:
+    if num % 3 == 0 and num % 5 == 0:
+        print(f"{num} is divisible by both 3 and 5 ")'''
+
+#____________________________________________________________________________________________________________
+
+#Exercise 2: The Unusual Shopping Basket
+#Situation: A customer has purchased different items. You need to identify whether an item appears more than once.
+#Try to avoid printing the same repeated item multiple times.
+
+basket = ["apple", "milk", "bread", "apple", "rice", "milk"]
+
+'''for item in basket:
+    if basket.count(item) > 1:
+       print(f"{item} appears more than once in the basket.")'''
+
+
+printed =set()
+
+for item in basket:
+    if basket.count(item) > 1 and item not in printed:
+        print(f"{item} appears more than once in the basket.")
+        printed.add(item)
+
+
+
+
+       
+
