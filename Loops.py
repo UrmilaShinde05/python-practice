@@ -1,4 +1,36 @@
 #for loops and range(). Type each example your self. Start with for i in range(5): print(i), and predict the output before you run it. Then try range(2, 10, 2).
+"""print numbers 1 to 10, print the even numbers from 1 to 20, 
+and print the multiplication table for a number the user enters."""
+
+"""for i in range(1,11):
+    print(i)
+
+for i in range(2,21,2):
+    print(i)"""
+
+#____________________________________________________________________________________________________________
+
+'''text = "Python"
+
+for char in reversed(text):
+    print(char)'''
+#____________________________________________________________________________________________________________
+'''d = {0, 1, 2}
+for x in d:
+    print(x)'''
+#____________________________________________________________________________________________________________
+
+'''x = 'abcd'
+for i in range(len(x)):  
+    print(i, end= " ")'''
+#__________________________________________________________________________________________________________
+
+numbers = [1, 2, 3, 4, 5]
+for i, num in enumerate(numbers):
+   if i % 2 == 0:
+       continue
+   print(num, end=' ')
+#__________________________________________________________________________________________________________
 
 '''for i in range(5):
     print(i)
@@ -72,10 +104,10 @@ print("\n_________Employee Details_________")
 
 for'''
 
-
+#_____________________________________________________________________________________________________________
 # Employee Salary Management System
 
-employees = []
+'''employees = []
 
 num_employees = int(input("How many employees do you want to enter? "))
 
@@ -132,4 +164,32 @@ print("\n======= SALARY SUMMARY =======")
 
 print(f"Total Salary Expenditure: Rs. {total_salary:,.2f}")
 print(f"Average Salary: Rs. {average_salary:,.2f}")
-print(f"Total Employees: {num_employees}")
+print(f"Total Employees: {num_employees}")'''
+
+#____________________________________________________________________________________________________________
+
+"""Exercise 5: The Password Attempt System
+Situation: A user has only three attempts to enter the correct password.
+
+Your task:
+- Set a password in your program.
+- Ask the user to enter it.
+- Allow three attempts.
+- Display a success message if correct.
+- Display an account locked message if all attempts fail."""
+
+'''password = "Radha123"
+
+attempts = 3
+
+while attempts > 0:
+    user_input = input("Enter the password: ")
+    if user_input == password:
+        print("Password correct. Access granted.")
+        break
+    else:
+        attempts = attempts - 1
+        if attempts > 0:
+            print(f"Incorrect password. You have {attempts} attempts left.")
+        else:
+            print("Account locked. Too many failed attempts.")'''

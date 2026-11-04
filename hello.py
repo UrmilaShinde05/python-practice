@@ -327,22 +327,57 @@ for num in numbers:
 #Situation: A customer has purchased different items. You need to identify whether an item appears more than once.
 #Try to avoid printing the same repeated item multiple times.
 
-basket = ["apple", "milk", "bread", "apple", "rice", "milk"]
-
-'''for item in basket:
-    if basket.count(item) > 1:
-       print(f"{item} appears more than once in the basket.")'''
-
+'''basket = ["apple", "milk", "bread", "apple", "rice", "milk"]
 
 printed =set()
 
 for item in basket:
     if basket.count(item) > 1 and item not in printed:
         print(f"{item} appears more than once in the basket.")
-        printed.add(item)
+        printed.add(item)'''
 
+#_________________________________________________________________________________________________
 
+#Exercise 3: The Traffic Signal Simulator
+#Situation: Create a traffic signal program.
 
+'''traffic_signal = input("Enter the traffic signal color (red, yellow, green): ").lower()
 
-       
+if traffic_signal == "red" or traffic_signal == "Red" or traffic_signal == "RED":
+    print("Stop")
+elif traffic_signal == "yellow" or traffic_signal == "Yellow" or traffic_signal == "YELLOW":
+    print("Wait")
+elif traffic_signal == "green" or traffic_signal == "Green" or traffic_signal == "GREEN":
+    print("Go")
+
+else:
+    print("Invalid traffic signal color. Please enter red, yellow, or green.")
+'''
+
+#___________________________________________________________________________________________________
+'''Your task:
+- Display books that are available.
+- Display books that are out of stock.
+- Count how many books are available.'''
+
+books = {
+    "Python": 3,
+    "Java": 0,
+    "SQL": 5,
+    "AI": 2
+}
+
+available_books = []
+out_of_stock = []
+
+for book, quantity in books.items():
+
+    if quantity > 0:
+        available_books.append(book)
+    else:
+        out_of_stock.append(book)
+
+print(f"\nTotal Available Books: {len(available_books)}")
+print(f"Out of Stock Books: {out_of_stock}")
+
 
