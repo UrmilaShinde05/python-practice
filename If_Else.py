@@ -102,3 +102,21 @@ if total_salary > 50000:
 else:
     print("Regular Salary")
 
+#_____________________________________________________________________________________________
+
+"""4. Take a number and print `"positive"` 
+if it's above 0, `"negative"` if it's below 0, or `"zero"` otherwise."""
+
+X = float(input("Enter the num: "))
+
+if X > 0:
+    print("Positive")
+elif X < 0:
+    print("Negative")
+
+elif X == 0:
+	print("Zero")
+
+else:
+	print("Otherwise") 
+
