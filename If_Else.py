@@ -118,5 +118,4 @@ elif X == 0:
 	print("Zero")
 
 else:
-	print("Otherwise") 
-
+     print("Otherwise") 
