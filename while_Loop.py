@@ -111,3 +111,5 @@ while Guess_Num != Secret_Num:
     Guess_Num = int(input("Guess the Secret Num:"))
 
 print("Correct! You took", tries, "tries.")
+
+#_________________________________________________________________________________________
